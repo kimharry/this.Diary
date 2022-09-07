@@ -41,8 +41,8 @@ header > *, footer > * { margin: 0 10px; }
 header > button:hover, footer > button:hover {background: yellowgreen}
 header > button:active, footer > button:active { background: coral; }
 
-header { background:red; width:100%;}
-footer{ background: green; bottom: 0; width:100%; }
+header { position: fixed; background:red; width:100%;}
+footer{ position: fixed; background: green; bottom: 0; width:100%; }
 a{
     text-decoration: none;
     color: #fff;
@@ -94,6 +94,14 @@ input::placeholder{
 .forNav{
     left: 10em;
     width: calc(100% - 10em);
+}
+
+.settings {
+    font-size: 1.5rem;
+    padding: 20px 10vw;
+}
+.settings div {
+    padding: 10px 0;
 }
 
 .alignRight {
