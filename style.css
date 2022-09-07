@@ -34,8 +34,6 @@ nav > button{
 
 header, footer {
     position: fixed;
-    left: 10em;
-    width: calc(100% - 10em);
     display: flex;
     padding: 5px 5px;
 }
@@ -43,11 +41,8 @@ header > *, footer > * { margin: 0 10px; }
 header > button:hover, footer > button:hover {background: yellowgreen}
 header > button:active, footer > button:active { background: coral; }
 
-header { background:red; }
-footer{
-    background: green;
-    bottom: 0;
-}
+header { background:red; width:100%;}
+footer{ background: green; bottom: 0; width:100%; }
 a{
     text-decoration: none;
     color: #fff;
@@ -58,7 +53,7 @@ nav .menu div {
     padding: 10px;
     color: #fff;
 }
-nav .menu div:active {
+nav .menu div:active, .diariesCloset:active {
     background: coral;
 }
 
@@ -77,13 +72,33 @@ nav .menu div:active {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    left: 10em;
 }
 .diariesCloset{
     width: 150px;
     height: 200px;
     background: green;
     margin: 10px 20px;
+}
+input[type=text]{
+    position: fixed;
+    left: 30px;
+    font-size: 1.2em;
+    padding: 0 20px;
+    width: 70vw;
+    height: 3.6rem;
+    border-radius: 1.8rem;
+}
+input::placeholder{
+    color: #aaa;
+}
+.forNav{
+    left: 10em;
+    width: calc(100% - 10em);
+}
+
+.alignRight {
+    display: flex;
+    justify-content: right;
 }
 
 #welcomeMessage{
