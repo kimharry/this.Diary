@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+button:active { background: coral; }
+
+body{background: beige;}
+
+main {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+nav {
+    background: cyan;
+    z-index:10;
+    width: 10em;
+    height: 100vh;
+}
+nav > button{
+    padding: 10px;
+    width: 10em;
+    height: 6em;
+    background: #000;
+    color: #fff;
+}
+
+header, footer {
+    position: fixed;
+    left: 10em;
+    width: calc(100% - 10em);
+    display: flex;
+    padding: 5px 5px;
+}
+header > *, footer > * { margin: 0 10px; }
+header > button:hover, footer > button:hover {background: yellowgreen}
+header > button:active, footer > button:active { background: coral; }
+
+header { background:red; }
+footer{
+    background: green;
+    bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.gowunBatang{font-family: 'Gowun Batang', serif;}
+.gowunDodum{font-family: 'Gowun Dodum', sans-serif;}
+
+.disabled{display: none}
+.fixed{position: fixed}
+.main_area{
+    width: calc(100% - 10em);
+}
+.diariesClosetMod{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    left: 10em;
+}
+.diariesCloset{
+    width: 150px;
+    height: 200px;
+    background: green;
+    margin: 10px 20px;
+}
+
+#welcomeMessage{
+    background: yellow;
+    width:10em;
+    height: 25vh;
+}
+
+#welcomeMessage > div {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#welcomeMessage .username {
+    font-size: 1.7em;
+    font-weight: 400;
+}
