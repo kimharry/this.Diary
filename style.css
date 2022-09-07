@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border-width: 0;
@@ -9,22 +9,28 @@
     font-weight: 300;
 }
 
-button:active { background: coral; }
+button:active {
+    background: coral;
+}
 
-body{background: beige;}
+body {
+    background: beige;
+}
 
 main {
     display: flex;
     align-items: stretch;
     height: 100vh;
 }
+
 nav {
     background: cyan;
-    z-index:10;
+    z-index: 10;
     width: 10em;
     height: 100vh;
 }
-nav > button{
+
+nav>button {
     padding: 10px;
     width: 10em;
     height: 6em;
@@ -32,23 +38,40 @@ nav > button{
     color: #fff;
 }
 
-header, footer {
+header,
+footer {
     position: fixed;
     left: 10em;
     width: calc(100% - 10em);
     display: flex;
     padding: 5px 5px;
 }
-header > *, footer > * { margin: 0 10px; }
-header > button:hover, footer > button:hover {background: yellowgreen}
-header > button:active, footer > button:active { background: coral; }
 
-header { background:red; }
-footer{
+header>*,
+footer>* {
+    margin: 0 10px;
+}
+
+header>button:hover,
+footer>button:hover {
+    background: yellowgreen
+}
+
+header>button:active,
+footer>button:active {
+    background: coral;
+}
+
+header {
+    background: red;
+}
+
+footer {
     background: green;
     bottom: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
 }
@@ -58,20 +81,33 @@ nav .menu {
     padding: 10px;
     color: #fff;
 }
+
 nav .menu:active {
     background: coral;
 }
 
 
-.gowunBatang{font-family: 'Gowun Batang', serif;}
-.gowunDodum{font-family: 'Gowun Dodum', sans-serif;}
+.gowunBatang {
+    font-family: 'Gowun Batang', serif;
+}
 
-.disabled{display: none}
-.fixed{position: fixed}
-.main_area{
+.gowunDodum {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.disabled {
+    display: none
+}
+
+.fixed {
+    position: fixed
+}
+
+.main_area {
     width: calc(100% - 10em);
 }
-.diariesClosetMod{
+
+.diariesClosetMod {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -79,20 +115,21 @@ nav .menu:active {
     padding: 10px;
     left: 10em;
 }
-.diariesCloset{
+
+.diariesCloset {
     width: 150px;
     height: 200px;
     background: green;
     margin: 10px 20px;
 }
 
-#welcomeMessage{
+#welcomeMessage {
     background: yellow;
-    width:10em;
+    width: 10em;
     height: 25vh;
 }
 
-#welcomeMessage > div {
+#welcomeMessage>div {
     padding: 10px;
     font-size: 1.2em;
 }
@@ -101,3 +138,38 @@ nav .menu:active {
     font-size: 1.7em;
     font-weight: 400;
 }
+
+#diaryStatus {
+    top: 3vh;
+    left: 10em;
+    background: lightblue;
+    width: 11em;
+    height: 93vh;
+    z-index: -1;
+}
+
+#diaryStatus>div {
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+}
+
+#year {
+    font-size: 1.5em;
+    top: 1.5vh;
+    left: 1.2em;
+}
+
+#month {
+    font-size: 1.5em;
+    top: 4.5vh;
+    left: 2.2em;
+}
+
+#date {
+    font-size: 4em;
+    top: -0.5vh;
+    left: 1.25em;
+}
+
+/* #dateIndex {} */

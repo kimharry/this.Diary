@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>this.Diary</title>
     <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <nav class="fixed">
-            <section id = "welcomeMessage">
+            <section id="welcomeMessage">
                 <div>
                     <strong class="username">주하진</strong>님, 환영합니다.
             </section>
@@ -22,6 +25,16 @@
                 <button name="diary">일기</button>
                 <button name="memo">메모</button>
             </header>
+
+            <section id="diaryStatus" class="fixed">
+                <div id="year"> 2022 </div>
+                <div id="month"> 09 </div>
+                <div id="date"> 17 </div>
+
+                <span class="material-icons-round" id="dateIndex">
+                    arrow_back_ios arrow_forward_ios
+                </span>
+            </section>
 
             <footer>
                 <input type="file">
@@ -38,4 +51,5 @@
         </article>
     </main>
 </body>
+
 </html>
