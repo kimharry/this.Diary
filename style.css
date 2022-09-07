@@ -53,6 +53,14 @@ a{
     color: #fff;
 }
 
+nav .menu {
+    background: darkred;
+    padding: 10px;
+    color: #fff;
+}
+nav .menu:active {
+    background: coral;
+}
 
 
 .gowunBatang{font-family: 'Gowun Batang', serif;}
