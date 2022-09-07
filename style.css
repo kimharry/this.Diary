@@ -53,12 +53,12 @@ a{
     color: #fff;
 }
 
-nav .menu {
+nav .menu div {
     background: darkred;
     padding: 10px;
     color: #fff;
 }
-nav .menu:active {
+nav .menu div:active {
     background: coral;
 }
 
@@ -100,4 +100,15 @@ nav .menu:active {
 #welcomeMessage .username {
     font-size: 1.7em;
     font-weight: 400;
+}
+
+#todaysDiary {
+    padding: 20px 10px;
+    font-size: 1.3em;
+}
+
+#toAllDiary {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 }
