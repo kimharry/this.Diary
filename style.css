@@ -140,11 +140,10 @@ nav .menu:active {
 }
 
 #diaryStatus {
-    top: 3vh;
     left: 10em;
     background: lightblue;
     width: 11em;
-    height: 93vh;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -156,20 +155,24 @@ nav .menu:active {
 
 #year {
     font-size: 1.5em;
-    top: 1.5vh;
+    top: 4.5vh;
     left: 1.2em;
 }
 
 #month {
     font-size: 1.5em;
-    top: 4.5vh;
+    top: 7.5vh;
     left: 2.2em;
 }
 
 #date {
     font-size: 4em;
-    top: -0.5vh;
+    top: 2.7vh;
     left: 1.25em;
 }
 
-/* #dateIndex {} */
+#dateIndex {
+    position: relative;
+    top: 12vh;
+    left: 2em;
+}
