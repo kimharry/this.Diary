@@ -9,8 +9,6 @@
     font-weight: 300;
 }
 
-button:active { background: coral; }
-
 body{background: beige;}
 
 main {
@@ -53,7 +51,7 @@ nav .menu div {
     padding: 10px;
     color: #fff;
 }
-nav .menu div:active, .diariesCloset:active {
+nav .menu div:active, .diariesCloset:active, button:active, .settings div:active, .alignRight div:active{
     background: coral;
 }
 
@@ -101,7 +99,9 @@ input::placeholder{
     padding: 20px 10vw;
 }
 .settings div {
-    padding: 10px 0;
+    padding: 1rem 0;
+    background: tan;
+    margin: 15px 0;
 }
 
 .alignRight {
