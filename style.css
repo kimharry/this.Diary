@@ -51,7 +51,7 @@ nav .menu div {
     padding: 10px;
     color: #fff;
 }
-nav .menu div:active, .diariesCloset:active, button:active, .settings div:active, .alignRight div:active{
+nav .menu div:active, .diariesCloset:active, button:active, .footer_link:active, .settings_link:active{
     background: coral;
 }
 
@@ -98,7 +98,8 @@ input::placeholder{
     font-size: 1.5rem;
     padding: 20px 10vw;
 }
-.settings div {
+.settings a {
+    display: block;
     padding: 1rem 0;
     background: tan;
     margin: 15px 0;
