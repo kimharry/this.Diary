@@ -186,3 +186,34 @@ input::placeholder {
     bottom: 10px;
     left: 10px;
 }
+
+#diaryStatus {
+    position: fixed;
+    background: cadetblue;
+    left: 10em;
+    height: 100%;
+    width: 11em;
+    /* z-index: -1; */
+}
+
+#diaryStatus .date {
+    position: fixed;
+}
+
+#diaryStatus .date #year {
+    font-size: 15pt;
+    /* left: 2px; */
+}
+
+#diaryStatus .date #month {
+    font-size: 15pt;
+    /* left: 2px; */
+}
+
+#diaryStatus .date #day {
+    font-size: 30pt;
+    /* left: 2px; */
+}
+
+/* width: fit-content; */
+/* text-align: center; */
