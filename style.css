@@ -9,10 +9,6 @@
     font-weight: 300;
 }
 
-button:active {
-    background: coral;
-}
-
 body {
     background: beige;
 }
@@ -41,8 +37,6 @@ nav>button {
 header,
 footer {
     position: fixed;
-    left: 10em;
-    width: calc(100% - 10em);
     display: flex;
     padding: 5px 5px;
 }
@@ -63,12 +57,16 @@ footer>button:active {
 }
 
 header {
+    position: fixed;
     background: red;
+    width: 100%;
 }
 
 footer {
+    position: fixed;
     background: green;
     bottom: 0;
+    width: 100%;
 }
 
 a {
@@ -76,13 +74,17 @@ a {
     color: #fff;
 }
 
-nav .menu {
+nav .menu div {
     background: darkred;
     padding: 10px;
     color: #fff;
 }
 
-nav .menu:active {
+nav .menu div:active,
+.diariesCloset:active,
+button:active,
+.footer_link:active,
+.settings_link:active {
     background: coral;
 }
 
@@ -113,7 +115,6 @@ nav .menu:active {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    left: 10em;
 }
 
 .diariesCloset {
@@ -121,6 +122,42 @@ nav .menu:active {
     height: 200px;
     background: green;
     margin: 10px 20px;
+}
+
+input[type=text] {
+    position: fixed;
+    left: 30px;
+    font-size: 1.2em;
+    padding: 0 20px;
+    width: 70vw;
+    height: 3.6rem;
+    border-radius: 1.8rem;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.forNav {
+    left: 10em;
+    width: calc(100% - 10em);
+}
+
+.settings {
+    font-size: 1.5rem;
+    padding: 20px 10vw;
+}
+
+.settings a {
+    display: block;
+    padding: 1rem 0;
+    background: tan;
+    margin: 15px 0;
+}
+
+.alignRight {
+    display: flex;
+    justify-content: right;
 }
 
 #welcomeMessage {
@@ -139,40 +176,13 @@ nav .menu:active {
     font-weight: 400;
 }
 
-#diaryStatus {
-    left: 10em;
-    background: lightblue;
-    width: 11em;
-    height: 100vh;
-    z-index: -1;
+#todaysDiary {
+    padding: 20px 10px;
+    font-size: 1.3em;
 }
 
-#diaryStatus>div {
-    position: absolute;
-    text-align: center;
-    width: fit-content;
-}
-
-#year {
-    font-size: 1.5em;
-    top: 4.5vh;
-    left: 1.2em;
-}
-
-#month {
-    font-size: 1.5em;
-    top: 7.5vh;
-    left: 2.2em;
-}
-
-#date {
-    font-size: 4em;
-    top: 2.7vh;
-    left: 1.25em;
-}
-
-#dateIndex {
-    position: relative;
-    top: 12vh;
-    left: 2em;
+#toAllDiary {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 }
