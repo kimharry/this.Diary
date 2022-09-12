@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Noto+Sans+KR:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Noto+Sans+KR:wght@300;700&family=Noto+Serif+KR:wght@300;600&display=swap');
 
 * {
     margin: 0;
@@ -97,10 +97,17 @@ button:active,
 .gowunBatang {
     font-family: 'Gowun Batang', serif;
 }
-
 .gowunDodum {
     font-family: 'Gowun Dodum', sans-serif;
 }
+.notoSerif {
+    font-family: 'Noto Serif KR', serif;
+}
+
+b {
+    font-weight: 700;
+}
+
 
 .disabled {
     display: none
@@ -260,7 +267,7 @@ input::placeholder {
 
 
 #spaceToWrite {
-    background: #fac792;
+    background: #fff;
     position: fixed;
     top: 2em;
     left: 21em;
@@ -271,7 +278,7 @@ input::placeholder {
 
 #spaceToWrite .title {
     font-size: 2.7rem;
-    font-weight: 400;
+    font-weight: 700;
     margin: 1.5rem 10px;
 }
 
