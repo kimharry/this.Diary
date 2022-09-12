@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>this.Diary</title>
     <link href="../style.css" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <nav class="fixed">
-            <section id = "welcomeMessage">
+            <section id="welcomeMessage">
                 <div>
                     <strong class="username">주하진</strong>님, 환영합니다.
             </section>
@@ -30,10 +32,41 @@
                 <button name="memo">메모</button>
             </header>
 
+            <section id="diaryStatus">
+                <div class="date">
+                    <div id="year"> year </div>
+                    <div id="month"> mon </div>
+                    <div id="day"> D </div>
+                </div>
+
+                <div class="dateIndex">
+                    <button id="backward"> backward </button>
+                    <button id="forward"> forward </button>
+                </div>
+
+                <select id="weather">
+                    <option value="default" selected> select weather </option>
+                    <option value="sun"> sun </option>
+                    <option value="cloud"> cloud </option>
+                    <option value="wind"> wind </option>
+                    <option value="rain"> rain </option>
+                    <option value="snow"> snow </option>
+                </select>
+            </section>
+            
+            <!--글 쓰는 공간-->
+            
+            <section id="spaceToWrite">
+                
+            </section>
+
+
+
             <footer class="forNav">
-                <input type="file">
-                <input type="color" name="text_colour">
-                <select name="font">
+                <button id="boldBtn" class="gowunBatang"><b>B</b></button>
+                <button id="italicBtn" class="gowunBatang"><i>I</i></button>
+                <input id="colorBtn" type="color" name="text_colour">
+                <select id="fontBtn" name="font">
                     <option value="none">기본서체</option>
                     <option value="noto sans CJK KR">본고딕</option>
                     <option value="noto serif CJK KR">본명조</option>
@@ -43,6 +76,10 @@
             </footer>
 
         </article>
+
+
+        <script type="text/javascript" src="../app/home.js"></script>
     </main>
 </body>
+
 </html>

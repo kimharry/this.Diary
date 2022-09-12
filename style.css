@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border-width: 0;
@@ -9,20 +9,24 @@
     font-weight: 300;
 }
 
-body{background: beige;}
+body {
+    background: beige;
+}
 
 main {
     display: flex;
     align-items: stretch;
     height: 100vh;
 }
+
 nav {
     background: cyan;
-    z-index:10;
+    z-index: 10;
     width: 10em;
     height: 100vh;
 }
-nav > button{
+
+nav>button {
     padding: 10px;
     width: 10em;
     height: 6em;
@@ -35,13 +39,41 @@ header, footer {
     display: flex;
     padding: 5px 5px;
 }
-header > *, footer > * { margin: 0 10px; }
-header > button:hover, footer > button:hover {background: yellowgreen}
-header > button:active, footer > button:active { background: coral; }
 
-header { position: fixed; background:red; width:100%;}
-footer{ position: fixed; background: green; bottom: 0; width:100%; }
-a{
+header>*,
+footer>* {
+    margin: 0 10px;
+}
+
+header>button:hover,
+footer>button:hover {
+    background: yellowgreen
+}
+
+header>button:active,
+footer>button:active {
+    background: coral;
+}
+
+header {
+    position: fixed;
+    background: red;
+    left: 10em;
+    width: 100%;
+    height: 2em;
+    z-index: 10;
+}
+
+footer {
+    position: fixed;
+    background: green;
+    bottom: 0px;
+    width: 100%;
+    height: 3em;
+    z-index: 10;
+}
+
+a {
     text-decoration: none;
     color: #fff;
 }
@@ -51,33 +83,52 @@ nav .menu div {
     padding: 10px;
     color: #fff;
 }
-nav .menu div:active, .diariesCloset:active, button:active, .footer_link:active, .settings_link:active{
+
+nav .menu div:active,
+.diariesCloset:active,
+button:active,
+.footer_link:active,
+.settings_link:active {
     background: coral;
 }
 
 
-.gowunBatang{font-family: 'Gowun Batang', serif;}
-.gowunDodum{font-family: 'Gowun Dodum', sans-serif;}
+.gowunBatang {
+    font-family: 'Gowun Batang', serif;
+}
 
-.disabled{display: none}
-.fixed{position: fixed}
-.main_area{
+.gowunDodum {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.disabled {
+    display: none
+}
+
+.fixed {
+    position: fixed
+}
+
+.main_area {
     width: calc(100% - 10em);
 }
-.diariesClosetMod{
+
+.diariesClosetMod {
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
 }
-.diariesCloset{
+
+.diariesCloset {
     width: 150px;
     height: 200px;
     background: green;
     margin: 10px 20px;
 }
-input[type=text]{
+
+input[type=text] {
     position: fixed;
     left: 30px;
     font-size: 1.2em;
@@ -86,10 +137,12 @@ input[type=text]{
     height: 3.6rem;
     border-radius: 1.8rem;
 }
-input::placeholder{
+
+input::placeholder {
     color: #aaa;
 }
-.forNav{
+
+.forNav {
     left: 10em;
     width: calc(100% - 10em);
 }
@@ -98,6 +151,7 @@ input::placeholder{
     font-size: 1.5rem;
     padding: 20px 10vw;
 }
+
 .settings a {
     display: block;
     padding: 1rem 0;
@@ -110,13 +164,13 @@ input::placeholder{
     justify-content: right;
 }
 
-#welcomeMessage{
+#welcomeMessage {
     background: yellow;
-    width:10em;
+    width: 10em;
     height: 25vh;
 }
 
-#welcomeMessage > div {
+#welcomeMessage>div {
     padding: 10px;
     font-size: 1.2em;
 }
@@ -135,4 +189,84 @@ input::placeholder{
     position: fixed;
     bottom: 10px;
     left: 10px;
+}
+
+#diaryStatus {
+    position: fixed;
+    background: cadetblue;
+    top: 2em;
+    left: 10em;
+    height: calc(100% - 4em);
+    width: 11em;
+    /* z-index: -1; */
+}
+
+#diaryStatus>div {
+    position: relative;
+}
+
+#diaryStatus .date>div {
+    position: relative;
+    /* padding: 5px */
+}
+
+#diaryStatus .date #year {
+    text-align: right;
+    font-size: 15pt;
+    top: 1.5em;
+    left: -5.2em;
+}
+
+#diaryStatus .date #month {
+    text-align: right;
+    font-size: 15pt;
+    top: 1.5em;
+    left: -5.2em;
+}
+
+#diaryStatus .date #day {
+    font-size: 50pt;
+    top: -0.8em;
+    left: 1.15em;
+}
+
+#diaryStatus .dateIndex>button {
+    position: relative;
+    width: 5em;
+    height: 2em;
+    border-radius: 0.3em;
+}
+
+#diaryStatus .dateIndex #backward,
+#diaryStatus .dateIndex #forward {
+    top: -3em;
+    left: 1.5em;
+}
+
+#diaryStatus>select {
+    position: relative;
+    width: 10em;
+    height: 2em;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+#diaryStatus #weather {
+    top: -1em;
+    left: 1.55em;
+}
+
+
+
+#spaceToWrite {
+    background: #fac792;
+    position: fixed;
+    top: 2em;
+    left: 21em;
+    width: calc(100% - 21em);
+    height: calc(100% - 4em);
+}
+
+#colorBtn, #boldBtn, #italicBtn {
+    width: 2em;
 }
