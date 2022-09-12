@@ -2,13 +2,17 @@
 const today = new Date();
 document.querySelector("#year").innerHTML = today.getFullYear();
 document.querySelector("#month").innerHTML = clockNotationConverter(today.getMonth() + 1);
-document.querySelector("#day").innerHTML = clockNotationConverter(today.getDate());
+document.querySelector("#d_date").innerHTML = clockNotationConverter(today.getDate());
 
 const spaceToWrite = document.querySelector('#spaceToWrite');
 const colorBtn = document.querySelector('colorBtn');
 const fontBtn = document.querySelector('fontBtn');
+const boldBtn = document.querySelector('boldBtn');
+const italicBtn = document.querySelector('italicBtn');
 
+boldBtn.addEventListener('click', () => { document.execCommand('bold') }
 
+)
 
 function clockNotationConverter(num) {
     let stringNum = String(num)
